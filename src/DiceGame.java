@@ -3,8 +3,8 @@ public class DiceGame {
 		//lancer du joueur 1
 		System.out.println("-----------------------");
 		System.out.println("joueur A: ");
-		int dice1 = (int) (Math.random() * 5.4) + 1;
-		int dice2 = (int) (Math.random() * 5.4) + 1;
+		int dice1 = (int) (Math.random() * 5.5) + 1;
+		int dice2 = (int) (Math.random() * 5.5) + 1;
 		int result1 = dice1 + dice2;
 		System.out.println(dice1 + " et " + dice2);
 		if (dice1 == dice2){
@@ -16,8 +16,8 @@ public class DiceGame {
 
 		//lancer du joueur 2
 		System.out.println("joueur B: ");
-		int dice3 = (int) (Math.random() * 5.4) + 1;
-		int dice4 = (int) (Math.random() * 5.4) + 1;
+		int dice3 = (int) (Math.random() * 5.5) + 1;
+		int dice4 = (int) (Math.random() * 5.5) + 1;
 		int result2 = dice3 + dice4;
 		System.out.println(dice3 + " et " + dice4);
 		if (dice3 == dice4){
@@ -37,7 +37,7 @@ public class DiceGame {
 			if (result2 >= 2*result1){
 				System.out.println("victoire écrasante du joueur B!");
 			} else {
-			System.out.println("victoire joueur B");}
+			System.out.println("victoire joueur B!");}
 		} else {
 			System.out.println("ex aequo");
 		}
