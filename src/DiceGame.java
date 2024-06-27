@@ -1,7 +1,8 @@
 public class DiceGame {
 	public static void main (String[] args) {
-		//lancer du joueur 1
 		System.out.println("-----------------------");
+		System.out.println("Nouvelle Partie");
+		System.out.println(""); //lancer du joueur 1
 		System.out.println("joueur A: ");
 		int dice1 = (int) (Math.random() * 5.5) + 1;
 		int dice2 = (int) (Math.random() * 5.5) + 1;
@@ -12,9 +13,7 @@ public class DiceGame {
 			result1 = 2*result1;
 		}
 		System.out.println("total joueur A: " + result1);
-		System.out.println("");
-
-		//lancer du joueur 2
+		System.out.println(""); //lancer du joueur 2
 		System.out.println("joueur B: ");
 		int dice3 = (int) (Math.random() * 5.5) + 1;
 		int dice4 = (int) (Math.random() * 5.5) + 1;
@@ -26,7 +25,6 @@ public class DiceGame {
 		}
 		System.out.println("total joueur B: " + result2);
 		System.out.println("");
-
 		//match
 		if (result1 > result2){
 			if (result1 >= 2*result2){
@@ -42,7 +40,5 @@ public class DiceGame {
 			System.out.println("ex aequo");
 		}
 		System.out.println("-----------------------");
-		System.out.println("^C");
 	}
-}
-// (C) Sébastien Gantois, 2024
+} // (C) Sébastien Gantois, 2024
